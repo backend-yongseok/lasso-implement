@@ -9,7 +9,7 @@ const Navigation: React.FC = () => {
   const pageLinks: PageLink[] = [
     "rayCasting",
     "rayCasting+greedSearch",
-    "rayCasting+quardTree",
+    "rayCasting+quadTree",
     "windingNumber",
     "convexHull",
   ].map((file) => ({
