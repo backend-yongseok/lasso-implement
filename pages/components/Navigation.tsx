@@ -1,20 +1,21 @@
-import Link from "next/link";
+import Link from "next/link"
 
 type PageLink = {
-  name: string;
-  path: string;
-};
+  name: string
+  path: string
+}
 
 const Navigation: React.FC = () => {
   const pageLinks: PageLink[] = [
     "rayCasting",
+    "rayCasting+greedSearch",
+    "rayCasting+quardTree",
     "windingNumber",
     "convexHull",
-    "quardTree",
   ].map((file) => ({
     name: file,
     path: `/${file}`,
-  }));
+  }))
 
   return (
     <nav>
@@ -26,7 +27,7 @@ const Navigation: React.FC = () => {
         ))}
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navigation;
+export default Navigation
